@@ -23,6 +23,17 @@ public class App {
 		
 		Runner runner2 = new Runner();
 		runner2.start();
+		
+		try {
+			runner2.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		Runner runner3 = new Runner();
+		runner3.start();
+		
 	}
 }
 
